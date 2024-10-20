@@ -1,0 +1,70 @@
+<!--
+    Name: Carl Michael Canlas
+    Section: CYB - 201
+    Date: November 18, 2023
+-->
+
+<!DOCTYPE html>
+<html>
+<style>
+body{
+background-image:url("load.jpg");background-size:cover;background-position:fixed;background-repeat:no-repeat:}
+h3{font-size:100px;  font-weight:900;text-transform:uppercase;
+  font-family:sans-serif;
+color:white;}
+#myProgress {
+  width: 75%;
+  background-color: transparent;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#myBar {
+  width: 10%;
+  height:50px;
+  background-color: black;
+  text-align: center;
+  line-height: 30px;
+  color: transparent;
+  padding-top:10px;
+}
+.buttonload:hover{background-color:green;border:5px solid green;color:white;width:100px;height:50px;font-weight:1000;padding:10px;font-family:Calibri;}
+	.buttonload{background-color:white;border:5px solid green;color:green;width:100px;height:50px;font-weight:1000;padding:10px;font-family:Calibri;text-decoration:none;}
+	#percent{font-size:40px;  font-weight:900;
+  font-family:sans-serif;background-image:url("21.jpg");
+	color:white;background-size: 100% 100%;-webkit-background-clip:text;}
+</style>
+<body onload="move()"><br><BR><BR><BR><br><center><h3>Outdoor Scheduler</h3></center><br>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<br><br><br>
+<h1 align="center" id="percent">
+10%</h1>
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+	var elem2 = document.getElementById("percent");
+	var width = 10;
+    var id = setInterval(frame, 50);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+		window.location.replace("index.html");
+      } else {
+        width++;
+        elem.style.width = width + "%";
+		elem2.innerHTML = width + "%..";
+      }
+    }
+  }
+}
+</script>
+</div>
+<center>
+</body>
+</html>

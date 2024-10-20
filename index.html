@@ -1,0 +1,407 @@
+<!--
+    Name: Carl Michael Canlas
+    Section: CYB - 201
+    Date: November 18, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Mo, Trip Ko</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/logo.png" height="70" alt="Trip Mo, Trip Ko logo">
+            </a>        
+        </div>
+        <ul class="header__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li class="only-mobile"><a href="partner.html">Become a Partner</a></li>
+            <li class="only-mobile"><a href="" class="orange">Log In</a></li>
+        </ul>
+        <div class="header__cta">
+            <a href="E:\Download\Trip Mo, Trip Ko\Login\login.html" class="button">Log In</a>
+            <a href="partner.html">Become a Partner</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero__content">
+            <h1>Find your next outdoor activity</h1>
+            <div class="form">
+
+                <div class="input-container">
+                    <div class="left">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="right">
+                        <input type="text" class="search-field " placeholder="Location">
+                    </div>                   
+                </div>
+
+                <div class = "input-container">
+                    <div class="left">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="right">
+                        <input type="text" class="search-field " placeholder="Date">
+                    </div>                   
+                </div>
+
+                <div class="input-container">
+                    <div class="left">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <div class="right">
+                        <input type="text" class="search-field " placeholder="Activity">
+                    </div>                   
+                </div>
+
+                <button class="search-btn" type="button">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <main>        
+        <h2>Our Services</h2>
+        <div class="main__service">
+            <div class="main__service__items">
+                <img src="img/service1.png" width="70px" height="70px" alt="computer icon">
+                <p>Online booking of outdoor activities.</p>
+            </div>
+            <div class="main__service__items">
+                <img src="img/service2.png" width="70px" height="70px" alt="rental icon">
+                <p>Sport equipment rental from shops or individuals.</p>
+            </div>
+            <div class="main__service__items">
+                <img src="img/service3.png" width="70px" height="70px" alt="money icon">
+                <p>Earn money by renting out your equipment to other site users.</p>
+            </div>
+        </div>
+
+        <h2 id="carouselTitle">What's Your Environment?</h2>
+        <div class="carousel-container">
+            <div class="carousel-inner">
+                <div class="track">
+                    <div class="card-container-carousel">
+                        <div class="card-carousel">
+                            <div class="img-carousel img-1" alt="water sport picture">
+                                <p>Water</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container-carousel">
+                        <div class="card-carousel">
+                            <div class="img-carousel img-2" alt="BMX sport picture">
+                                <p>Land</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container-carousel">
+                        <div class="card-carousel">
+                            <div class="img-carousel img-3" alt="zipline sport picture">
+                                <p>Air</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container-carousel">
+                        <div class="card-carousel">
+                            <div class="img-carousel img-4" alt="">
+                                <p>Road</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container-carousel">
+                        <div class="card-carousel">
+                            <div class="img-carousel img-5" alt="skateboarding sport picture">
+                                <p>Urban</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__carddiv">
+            <h2>Featured Outdoor Activities</h2>
+            <div class="container">
+                <section class="cards">
+                    
+                    <article>
+                        <a href="El Kabayo.html">
+                            <img src="img/card/el kabayo.jpg" alt="horse riding activity">
+                        </a>
+                        <div class="text">
+                            <a href="El Kabayo.html">
+                                <h4>Horseback Riding Day at El Kabayo</h4>
+                            </a>
+                            <p>Activity</p>
+                            <p>Category: Horseback Riding</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span>  Clark, Pampanga</span></p>
+                            <p><i class="far fa-clock"></i><span>  Duration: 6 hours</span></p>
+                            <p>from <span class="orange">₱ 100.00</span></p>
+                        </div>
+                    </article>
+    
+                    <article>
+                        <a href="Pinatubo.html">
+                            <img src="img/card/pinatubo.jpg" alt="Pinatubo">
+                        </a>    
+                        <div class="text">
+                            <h4>Pinatubo Off-road ATV Adventure</h4>
+                            <p>Activity</p>
+                            <p>Category: ATV Adventure</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span>  Mount Pinatubo, Pampanga</span></p>
+                            <p><i class="far fa-clock"></i><span> 4 hours</span></p>
+                            <p>from <span class="orange">₱ 2,000.00</span></p>
+                        </div>
+                    </article>
+    
+                    <article>
+                        <a href="Aqua.html">
+                            <img src="img/card/aqua.jpg" alt="Water">
+                        </a>
+                        <div class="text">
+                            <h4>Aqua Planet</h4>
+                            <p>Activity</p>
+                            <p>Category: Water Theme Park</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span> Clark Freeport Zone, Pampanga</span></p>
+                            <p><i class="far fa-clock"></i><span> All Day Pass</span></p>
+                            <p>from <span class="orange">₱ 950.00</span></p>
+                        </div>
+                    </article>
+    
+                    <article>
+                        <a href="Fly.html">
+                            <img src="img/card/fly1.jpg" alt="">
+                        </a>
+                        <div class="text">
+                            <h4>Angeles City Flying Club Aerial Adventure</h4>
+                            <p>Activity</p>
+                            <p>Category: Aerial Adventure</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span> Magalang, Pampanga</span></p>
+                            <p><i class="far fa-clock"></i><span> 30 minutes</span></p>
+                            <p>from <span class="orange">₱ 2,700.00</span></p>
+                        </div>
+                    </article>
+                </section>
+            </div>  
+            
+            <a href="activities.html"><button class="btn-secondary" type="button">See More</button></a>
+        </div>
+
+        <div class="main__carddiv">
+            <h2>Rentals: Featured Equipment</h2>
+            <div class="container">
+                <section class="cards">
+                    <article>
+                        <a href="Bike.html">
+                            <img src="img/card/bike.jpg" alt="">
+                        </a>
+                        <div class="text">
+                            <h4>BamBike</h4>
+                            <p>Rental</p>
+                            <p>Category: Bicycles</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span> Filinvest Mimosa, Pampanga</span></p>
+                            <p>from<span class="orange"> ₱ 950.00</span> (Hourly)</p>
+                        </div>
+                    </article>
+    
+                    <article>
+                        <a href="Wake.html">
+                            <img src="img/card/wake.jpg" alt="">
+                        </a>
+                        <div class = "text">
+                            <h4>Wakeboarding</h4>
+                            <p>Rental</p>
+                            <p>Category: Wakeboard</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span> Location: Deca Clark, Pampanga</span></p>
+                            <p>from <span class="orange">₱ 500.00</span> (Hourly)</p>
+                        </div>
+                    </article>
+    
+                    <article>
+                        <a href="Balloon.html">
+                            <img src="img/card/balloon.jpg" alt="">
+                        </a>
+                        <div class="text">
+                            <h4>Hot Air Balloon Festival</h4>
+                            <p>Rental</p>
+                            <p>Category: Hot Air Balloon</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span> Clark, Pampanga</span></p>
+                            <p>from <span class="orange">₱ 3,000.00</span> (Hourly)</p>
+                        </div>
+                    </article>
+    
+                    <article>
+                        <a href="Kart.html">
+                            <img src="img/card/kart.jpg" alt="">
+                        </a>
+                        <div class="text">
+                            <h4>City Kart Racing</h4>
+                            <p>Rental</p>
+                            <p>Category: Kart Racing</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span> Location: Clark, Pampanga</span></p>
+                            <p>from <span class="orange">₱ 1,500.00</span> (Hourly)</p>
+                        </div>
+                    </article>
+                </section>
+            </div>  
+            
+            <a href="activities.html">
+                <button class="btn-secondary" type="button">See More</button>
+            </a>
+        </div>
+
+        <section class="registerBlock">
+            <div class="registerBlock__container">
+                <div class="registerBlock__container__item1">
+                    <div class="registerBlockText">
+                    <h3>Publish your activities</h3>
+                    <p>Publish your activities and find new fantastic customers</p>
+                    <a href="partner.html">
+                        <button class="btn-secondary-black" type="button">Become a partner</button>
+                    </a>  
+                    </div>
+                </div>
+                <div class="registerBlock__container__item2" alt="girl in a camping photo"></div>
+            </div>
+        </section>
+
+    <section class="galleryBlock">
+        <h2>Activities Preferred by Our Users</h2>
+        <div class="containerGallery">
+            <div class="containerGallery__item1" alt="Puerto Princesa">
+                <h5>Puerto Princesa</h5>
+                <div class="containerGallery__price">
+                    <p>from <br><span>₱ 2,700.00</span></br></p>
+                </div>
+            </div>
+            <div class="containerGallery__item2" alt="Kayak Adventure in Cebu">
+                <h5>Kayak Adventure in Cebu</h5>
+                <div class="containerGallery__price">
+                    <p>from <br><span>₱ 2,700.00</span></br></p>
+                </div>
+            </div>
+            <div class="containerGallery__item3" alt="Skateboarding in Manila">
+                <h5>Skateboarding in Manila</h5>
+                <div class="containerGallery__price">
+                    <p>from <br><span>₱ 2,700.00</span></br></p>
+                </div>
+            </div>
+            <div class="containerGallery__item4" alt="Zipline in El Nido">
+                <h5>Zipline in El Nido</h5>
+                <div class="containerGallery__price">
+                    <p>from <br><span>₱ 2,700.00</span></br></p>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="faq">
+        <h2>FAQ</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    <p>How does Trip Mo, Trip Ko work?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>My Pampanga travel agency site boasts enticing destinations, services, easy booking, stunning visuals, and travel tips for a seamless user experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="accordion-item">
+                <div class="accordion-item-header">
+                    <p>How do I register?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>To register, click "Sign Up," fill in your details like name and email, then confirm via email to access the site's features.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    <p>Can I rent my equipment to others even if I'm not a store?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>Yes, you can rent out your equipment personally, using online platforms, but consider legal and insurance aspects.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    <p>How do I book a trip through this website?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>To book, explore, choose, check availability, fill details, pay securely, and get a confirmation email. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+    
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container__sect">
+                <p>Register to stay updated on our activities</p>
+                <div class="footer__container__dx--form">
+                    <input type="text" class="search-small" placeholder="Email">
+                    <button class="search-btn-small" type="button">Register</button>
+                </div>
+            </div>
+    
+            <div class="footer__container__sect dx">
+                <h5>Follow us on social media</h5>
+                <div class="menu_social">                    
+                    <a href="https://www.facebook.com/moonflair.sunflair" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/crlmchlas/"  title="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>                        
+                    <a href="https://www.youtube.com/channel/UCf7LmrdpBLTaeGtBwB_8Ruw" id="yt" title="YouTube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>                             
+                </div>
+    
+                <h5 id="social_title">Trip Mo, Trip Ko</h5>
+                <div class="footer__container__sect--miniMenu">
+                    <a href="activities.html">Activities</a>
+                    <a href="rentals.html">Rental</a>
+                    <a href="about.html">About Us</a>
+                    <a href="partner.html">Become a Partner</a>
+                    <a href="E:\Download\Trip Mo, Trip Ko\Login\login.html">Log In</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    
+<script src="js/app.js"></script>
+</body>
+</html>
+    

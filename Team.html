@@ -1,0 +1,247 @@
+<!--
+    Name: Carl Michael Canlas
+    Section: CYB - 201
+    Date: November 18, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Mo, Trip Ko</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+<style>
+.INTRO h1 {
+    font-size: 15rem;
+    color: transparent;
+    -webkit-text-stroke: 3px black;
+    position: relative;
+    z-index: 1; /* Set z-index to 1 to be above the ::before pseudo-element */
+}
+
+.INTRO h1::before {
+    content: "CREATOR";
+    position: absolute;
+    width: 0; 
+    height: 90%;
+    overflow: hidden;
+    color: grey;
+    border-right: 9px solid black; 
+    transition: width 1s ease-in-out; 
+    z-index: 0; 
+}
+
+.INTRO h1:hover::before {
+    width: 27%; /* Expand width to 100% on hover */
+    filter: drop-shadow(0 0 25px black);
+}
+
+.INTRO h2 {
+    font-size: 100px;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 3px black;
+}
+
+.INTRO h2:hover{
+    color: black;
+    transition: 0.9s ease-in-out;
+}
+
+.block {
+    display: inline-block;
+}
+
+.aunit:hover {
+    color: black;
+}
+
+.aunit {
+    text-decoration: none;
+    box-shadow: 10px 10px;
+}
+
+.unit {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #cccccc;
+    box-shadow: 10px 10px;
+    height: 400px;
+    width: 400px;
+    background-image: url(img/Ako.JPG);
+    background-size: cover;
+    padding: 1rem;
+    text-align: center;
+    font-family: SansationLight;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all 0.5s ease; /* Add transition for smooth animation */
+}
+
+.unit:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.unit p {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.unit:hover p {
+    color: black; /* Change text color to black on hover */
+}
+
+.hero--aboutUs {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__content {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero__content h1 {
+    color: white;
+}
+
+.hero1 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30vh;
+    position: relative;
+}
+
+.hero__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/logo.png" height="70" alt="Trip Mo, Trip Ko logo">
+            </a>
+        </div>
+        <ul class="header__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li class="only-mobile"><a href="partner.html">Become a Partner</a></li>
+            <li class="only-mobile"><a href="" class="orange">Log In</a></li>
+        </ul>
+        <div class="header__cta">
+            <a href="" class="button">Log In</a>
+            <a href="partner.html">Become a Partner</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="hero1 hero--aboutUs">
+        <video class="hero__video" autoplay loop muted playsinline>
+            <source src="img/hrpc.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero__content" alt="kayak picture">
+        </div>
+    </div>
+    
+    <main class="aboutUsMain">
+        <div class="INTRO">
+            <h2 style="font-size:100px;">THE</h2>
+            <h1 style="font-size:100px;" data-text="MEET THE TEAM">CREATOR</h1><br><br>
+        </div>
+				<div class="block">
+				<a class="aunit" href="https://www.facebook.com/moonflair.sunflair">
+			<div class="unit">
+					<h2>CARL MICHAEL</h2>
+					<p style="font-size:20px;font-weight:900;" align="center">
+					FACEBOOK</p>
+				</div></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a class="aunit" href="https://www.instagram.com/crlmchlas/"><div class="unit">
+					<h2>CARL MICHAEL</h2>
+					<p style="font-size:20px;font-weight:900;" align="center">
+                    INSTAGRAM</p>
+				</div></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a class="aunit" href="https://www.youtube.com/channel/UCf7LmrdpBLTaeGtBwB_8Ruw"><div class="unit">
+					<h2>CARL MICHAEL</h2>
+					<p style="font-size:20px;font-weight:900;" align="center">
+                    YOUTUBE</p>
+				</div></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a class="aunit" href="https://twitter.com/Canlazzz"><div class="unit">
+					<h2>CARL MICHAEL</h2>
+					<p style="font-size:20px;font-weight:900;" align="center">
+                    TWITTER</p>
+				</div></a>
+				<br>
+				</div>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container__sect">
+                <p>Sign up to stay updated on our activities</p>
+                <div class="footer__container__dx--form">
+                    <input type="text" class="search-small" placeholder="Email">
+                    <button class="search-btn-small" type="button">Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer__container__sect dx">
+                <h5>Follow us on social media</h5>
+                <div class="menu_social">                    
+                    <a href="https://www.facebook.com/moonflair.sunflair" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/crlmchlas/"  title="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>                        
+                    <a href="https://www.youtube.com/channel/UCf7LmrdpBLTaeGtBwB_8Ruw" id="yt" title="YouTube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>                             
+                </div>
+    
+                <h5 id="social_title">Trip Mo, Trip Ko</h5>
+                <div class="footer__container__sect--miniMenu">
+                    <a href="activities.html">Activities</a>
+                    <a href="rentals.html">Rental</a>
+                    <a href="about.html">About Us</a>
+                    <a href="partner.html">Become a Partner</a>
+                    <a href="E:\Download\Trip Mo, Trip Ko\Login\login.html">Log In</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

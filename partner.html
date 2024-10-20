@@ -1,0 +1,281 @@
+<!--
+    Name: Carl Michael Canlas
+    Section: CYB - 201
+    Date: November 18, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Mo, Trip Ko</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/logo.png" height="70" alt="Trip Mo, Trip Ko logo">
+            </a>
+        </div>
+        <ul class="header__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li class="only-mobile"><a href="partner.html">Become a Partner</a></li>
+            <li class="only-mobile"><a href="" class="orange">Log In</a></li>
+        </ul>
+        <div class="header__cta">
+            <a href="partner.html" class="button">Log In</a>
+            <a href="">Become a Partner</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="hero hero--partner">
+        <div class="hero__content">
+            <h1>Become a Partner</h1>
+            <div class="form">
+                <a class="js-trigger" href="#register">
+                    <button class="search-btn" type="button">Register</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="partnerName">
+        <div class="textContainer textContainer--partner">
+
+            <div class="textContainer__twoColCont">
+                <div class="col50">
+                    <h2>Why Become a Partner?</h2>
+                    <p>Reach millions of travelers looking to rent sports equipment or book tours, excursions, lessons, and courses for outdoor adventures.</p>
+                    <br>
+                    <p>With Trip Mo, Trip Ko, you create a free online showcase to promote your business. Choose the price, publish a listing, and accept requests based on your availability.</p>
+                </div>
+                <div class="col50 col50--second">
+                    <h2>You're in Safe Hands with Us</h2>
+                    <p>Trip Mo, Trip Ko provides you and your new customers with multilingual support 7 days a week. Our team of experts is always by your side, promoting you for free.</p>
+                </div>
+            </div>
+
+            <h2>Steps</h2>
+            <div class="step step--partner">
+
+                <div class="step__item">
+                    <div class="step__item--num">
+                        <p>1</p>
+                    </div>
+                    <div class="step__item--text step__item--text--partnerPage">
+                        <h5>Register on our website as a partner</h5>
+                        <p>It's simple and free. Just fill out the form below.</p>
+                    </div>
+                </div>
+
+                <div class="step__item">
+                    <div class="step__item--num">
+                        <p>2</p>
+                    </div>
+                    <div class="step__item--text step__item--text--partnerPage">
+                        <h5>Publish listings for your activities or equipment</h5>
+                        <p>Choose the dates and prices that work best for you. We're always available to assist you.</p>
+                    </div>
+                </div>
+
+                <div class="step__item">
+                    <div class="step__item--num">
+                        <p>3</p>
+                    </div>
+                    <div class="step__item--text step__item--text--partnerPage">
+                        <h5>Create a fantastic adventure for our users</h5>
+                        <p>Once your equipment or activity is chosen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textContainer__twoColCont textContainer__twoColCont--textImg">
+                <div class="col50 col50--afterMob">
+                    <p class="col50--bigText">
+                        "Registering my business on Trip Mo, Trip Ko allowed me to be discovered by new, fantastic customers."
+                    </p>
+                    <p class="col50--smallText">Luca, BMX instructor</p>
+                </div>
+                <div class="col50 col50--firstMob">
+                    <div class="col50__imgVert">
+                        <img src="img/bmx-coach-last.jpg" alt="BMX coach picture">
+                    </div>
+                </div>
+            </div>
+
+            <h2>Payments</h2>
+            <div class="step step--partner">
+
+                <div class="step__item">
+                    <div class="step__item--text step__item--text--partnerPage">
+                        <h5>Submit a request for availability</h5>
+                        <p>We will only pre-authorize the payment.</p>
+                    </div>
+                </div>
+
+                <div class="step__item">
+                    <div class="step__item--text step__item--text--partnerPage">
+                        <h5>Receive a response within 48 hours</h5>
+                        <p>If confirmed, you will be charged for the activity cost.</p>
+                    </div>
+                </div>
+
+                <div class="step__item">
+                    <div class="step__item--text step__item--text--partnerPage">
+                        <h5>Pick up your equipment</h5>
+                        <p>Collect the equipment at the location specified by the owner.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FORM -->
+
+        <div id="register" class="formContainer">
+            <form id="form" class="form">
+                <h2>Register</h2>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input name="username" type="text" id="username" placeholder="Enter your username" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email Address</label>
+                    <input name="email" type="text" id="email" placeholder="Enter your email" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input name="password" type="password" id="password" placeholder="Enter your password" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2">Confirm Password</label>
+                    <input
+                        name="confPassword"
+                        type="password"
+                        id="password2"
+                        placeholder="Confirm your password"
+                    />
+                    <small>Error message</small>
+                </div>
+                <button class="formButton" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- END FORM -->
+
+        <section class="faq">
+            <h2>FAQ</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        <p>How does Trip Mo, Trip Ko work?</p>
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <p>My Pampanga travel agency site boasts enticing destinations, services, easy booking, stunning visuals, and travel tips for a seamless user experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="accordion-item">
+                    <div class="accordion-item-header">
+                        <p>How do I register?</p>
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <p>To register, click "Sign Up," fill in your details like name and email, then confirm via email to access the site's features.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        <p>Can I rent my equipment to others even if I'm not a store?</p>
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <p>Yes, you can rent out your equipment personally, using online platforms, but consider legal and insurance aspects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        <p>How do I book a trip through this website?</p>
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <p>To book, explore, choose, check availability, fill details, pay securely, and get a confirmation email. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container__sect">
+                <p>Sign up to stay updated on our activities</p>
+                <div class="footer__container__dx--form">
+                    <input type="text" class="search-small" placeholder="Email">
+                    <button class="search-btn-small" type="button">Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer__container__sect dx">
+                <h5>Follow us on social media</h5>
+                <div class="menu_social">                    
+                    <a href="https://www.facebook.com/moonflair.sunflair" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/crlmchlas/"  title="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>                        
+                    <a href="https://www.youtube.com/channel/UCf7LmrdpBLTaeGtBwB_8Ruw" id="yt" title="YouTube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>                             
+                </div>
+    
+                <h5 id="social_title">Trip Mo, Trip Ko</h5>
+                <div class="footer__container__sect--miniMenu">
+                    <a href="activities.html">Activities</a>
+                    <a href="rentals.html">Rental</a>
+                    <a href="about.html">About Us</a>
+                    <a href="partner.html">Become a Partner</a>
+                    <a href="E:\Download\Trip Mo, Trip Ko\Login\login.html">Log In</a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Load the JS plugin - it's a vanilla JS plugin, so no need to load anything else first -->
+    <script src="js/moveTo.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
